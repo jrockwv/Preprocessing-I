@@ -57,3 +57,77 @@ html, body {
     height: 100%;
 }
 
+
+// this is where i'm starting my code
+
+
+.flex(){
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	margin:15px;
+}
+.flexColumn(){
+	display:flex;
+	flex-flow: column-reverse;
+}
+@textColor:forestgreen;
+@fancyFont:'Calistoga', cursive;
+.wrapper{
+	width:75%;
+	margin-left:200px;
+}
+header{
+	@media(max-width: 800px){
+		width:75%;
+		padding:10px;
+	}
+	.flex();
+	 nav{
+	 	a{
+			text-decoration: none;
+			color: @textColor;
+			font-size: 1.2rem;
+		}//a
+	}//nav
+}//header
+
+hr{
+	width:75%;
+}
+
+section{
+	@media(max-width: 800px){
+		width:75%;
+		padding:10px;
+	}
+	margin:15px;
+	border: 5px solid black;
+	img{
+		width:10%;
+	}//img
+		h1{
+			font-weight: bold;
+			font-size: 1.5rem;
+			.flex();
+
+		}//h1
+			p{
+				.flex();
+				font-family:@fancyFont;
+			}//p
+}//section
+
+
+.skills{
+	@media(max-width: 800px){
+		width:75%;
+		padding:10px;
+	}
+	.flex();
+}
+
+
+footer div{
+	background:red;
+}
